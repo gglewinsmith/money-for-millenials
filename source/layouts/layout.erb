@@ -9,24 +9,33 @@
     <title><%= current_page.data.title %></title>
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "application" %>
-    <%= favicon_tag 'images/favicon.png' %>
+    <%= favicon_tag 'images/avo.png' %>
       <div class="navbar-wagon">
         <!-- Logo -->
         <a href="/" class="navbar-wagon-brand">
-          <img src="images/m4m.jpg" alt="logo">
+          <img src="images/avo.png" alt="logo">
         </a>
 
         <!-- Right Navigation -->
         <div class="navbar-wagon-right hidden-xs hidden-sm">
 
-          <a href="" class="navbar-wagon-item navbar-wagon-link">Home</a>
-          <a href="" class="navbar-wagon-item navbar-wagon-link">Podcasts</a>
-          <a href="" class="navbar-wagon-item navbar-wagon-link">About</a>
-          <a href="" class="navbar-wagon-item navbar-wagon-link">Contact us</a>
+          <a href="/" class="navbar-wagon-item navbar-wagon-link">Home</a>
+          <a href="podcasts.html" class="navbar-wagon-item navbar-wagon-link">Podcasts</a>
+          <a href="about.html" class="navbar-wagon-item navbar-wagon-link">About</a>
+          <a href="contact.html" class="navbar-wagon-item navbar-wagon-link">Contact us</a>
         </div>
       </div>
   </head>
   <body>
     <%= yield %>
   </body>
+    <div class="footer">
+      <div class="footer-links">
+        <a href="https://twitter.com/MunzforMillen"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/george-lewin-smith-96baa7168/"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="footer-copyright" style="font-size: 16px;">
+        Copyright © 2018 George Lewin-Smith. All rights reserved.
+      </div>
+    </div>
 </html>
